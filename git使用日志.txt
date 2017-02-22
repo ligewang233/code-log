@@ -1,0 +1,24 @@
+
+//    git 使用日志
+
+***在 windows 上安装 git
+-下载地址： http://msysgit.github.io/
+-自报家门： $ git config --global user.name "your name"
+         $ git config --global user.name "email@example.com"
+
+***创建版本库 repository
+-创建命令： $ mkdir learngit
+           $ cd learngit
+           $ pwd
+           // pwd 命令用于显示当前目录
+-通过 git init 命令把这个目录变成 Git 可以管理的仓库
+    $ git init
+
+***把文件添加到版本库
+-编写一个 readme.txt 文件，放在 learngit 的目录下
+-用命令 git add 告诉 Git，把文件添加到仓库
+    $ git add readme.txt
+    // add 可以多次使用，添加多个文件
+-用命令 git commit 告诉 Git，把文件提交到仓库
+    $ git commit -m "wrote a readme file"
+    // commit 一次可以提交多个文件
